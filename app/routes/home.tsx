@@ -1,14 +1,19 @@
-import type { Route } from "./+types/home";
-import ItemForm from "./item_form";
+import Table from "~/components/table";
 
+import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Group Bill Splitter" },
+    { name: "description", content: "A project created to help split things fairly amongst your friends and family." },
   ];
 }
 
 export default function Home() {
-  return <ItemForm/>;
+  return (
+    <main>
+      <h1>Group Bill Splitter</h1>
+      <Table/>
+    </main>
+  )
 }

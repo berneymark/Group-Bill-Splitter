@@ -2,6 +2,14 @@ html, body {
   font-family: "sans-serif";
 }
 
+tr {
+  border-bottom: 1px solid black;
+}
+
+th {
+  padding: 0 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
